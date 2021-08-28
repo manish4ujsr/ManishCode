@@ -1,5 +1,5 @@
 const canvas = document.querySelector('canvas');
-const mnp = canvas.getContext('2d');
+const manish = canvas.getContext('2d');
 
 const resolution = 10;
 canvas.width = 1280;
@@ -65,11 +65,11 @@ function render(grid){
 		for (let row = 0; row < grid[col].length; row++){
 			const cell = grid[col][row];
 
-			mnp.beginPath();
-			mnp.rect(col * resolution, row * resolution, resolution, resolution);
-			mnp.fillStyle = cell ? 'black' : 'white';
-			mnp.fill();
-			mnp.stroke();
+			manish.beginPath();
+			manish.rect(col * resolution, row * resolution, resolution, resolution);
+			manish.fillStyle = cell ? 'black' : 'white';
+			manish.fill();
+			manish.stroke();
 		}
 	}
 }
